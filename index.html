@@ -43,9 +43,10 @@ body {
 
 /* Main content */
 .main {
+  margin-right: 200px;
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 /* Add an active class to the active dropdown button */
@@ -65,6 +66,19 @@ body {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+}
+
+.section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.landing-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 125px;
+  width: 50%;
 }
 
 /* Some media queries for responsiveness */
@@ -96,71 +110,82 @@ body {
 </div>
 
 <div class="main">
+  <img class="landing-logo" src="https://www.orsymphony.org/globalassets/media/logo_OS_v_RGB.png">
+  <h1 class="section">Ticket Office Handbook</h1>
+  <hr>
     <div id="overview">
-    <h1>Subscriptions</h1>
+    <h1 class="section">Subscriptions</h1>
     <h2>Overview</h2>
     <p>
-      The Oregon Symphony offers a variety of subscription ticket packages. 
-      There are two types: Fixed Series package and a Flex package.  
-      The Fixed Series packages are a specific set of pre-selected concerts.
-      The Flex package is a package that can be mostly customized by the subscriber.
+      The Oregon Symphony offers a variety of subscription ticket packages.
+      There are two types: <b>Fixed Series</b> package and a <b>Flex Series</b> package.
+      The <b>Fixed Series</b> packages are a specific set of pre-selected concerts.
+      The <b>Flex Series</b> can be mostly customized by the subscriber.
     </p>
     <p> 
-      The benefits of being a Fixed Series subscriber are: 
-      1) lowest prices for best seats, 2) Subscriber discounts on add-on concerts, 
-      3)  free exchanges, 4) no handling fees on Add-On Concerts, 
-      5) the same seats each season, 6) early access to Special Concerts, 
-      7) rehearsal passes, 8) invites to special Subscriber only events, 
-      9) and payment plan options.
+      The benefits of being a <b>Fixed Series</b> subscriber are:
+      <ol>
+        <li>Lowest Prices for Best Seats</li> 
+        <li>Subscriber Discounts on Add-On Concerts</li> 
+        <li>Free Exchanges</li>
+        <li>No Handling Fees on Add-On Concerts</li>
+        <li>Invites to Special Subscriber Only Events</li>
+        <li>The Same Seat Each Season</li>
+        <li>Early Access to Special Concerts</li>
+        <li>Rehearsal Passes</li>
+        <li>Payment Plan Options</li>
+      </ol>
     </p>
     <p>
-      The benefits of being a Flex subscriber are: 
-      1) Subscriber discounts on add-on concerts, 2) free exchanges, 
-      3) no handling fees on Add-On Concerts, 
-      4) invites to special Subscriber only events, 
-      5) the ability to make a custom package of their choosing.
+      The benefits of being a <b>Flex Series</b> subscriber are:
+    <ol>
+      <li>Subscriber Discounts on Add-On Concerts</li> 
+      <li>Free Exchanges</li>
+      <li>No Handling Fees on Add-On Concerts</li>
+      <li>Invites to Special Subscriber Only Events</li>
+      <li>Ability to Create a Custom Package of Their Choosing</li>
+    </ol>
+    <hr>
     </p>
     </div>
     <div id="fixed">
-    <h2>Fixed Series</h2>
-    <h3>Classical Series</h3>
+    <h2 >Fixed Series</h2>
+    <h3 class="section"><u>Classical Series</u></h3>
     <p>
       Classical concerts are concerts where classical music is the focus.
-      We offer 18 different Classical concerts.
-      They can be purchased in sets of 6, 12, or all 18.
-      The Classical concerts take place on Saturdays at 7:30 pm, 
-      Sundays at 2:00 pm, and Mondays at 7:30 pm.
+      We offer 18 different Classical concerts. They can be purchased in sets of 6, 12, or all 18.
+      The Classical concerts take place on Saturdays at 7:30 pm, Sundays at 2:00 pm, and Mondays at 7:30 pm.
     </p>
-    <h3>Pops Series</h3>
+    <h3 class="section"><u>Pops Series</u></h3>
     <p>
       Pops concerts are concerts where popular music is the focus.
-      We offer 4 different Pops concerts.
-      he Pops concerts take place on Saturdays at 7:30 pm and Sunday at 2:00 pm.
+      We offer 4 different Pops concerts. The Pops concerts take place on Saturdays at 7:30 pm and Sunday at 2:00 pm.
     </p>
-    <h3>Popcorn Series</h3>
+    <h3 class="section"><u>Popcorn Series</u></h3>
     <p>
       Popcorn concerts are movies that we screen while the Orchestra plays the score live.  
       We offer 4 Popcorn Package concerts. The Popcorn concerts take place on Saturdays at 7:30 pm and Sundays at 2:00pm. 
       Sometimes, due to popularity, there may be an added show on Friday Night or another weekend day. 
     </p>
-    <h3>Kids Series</h3>
+    <h3 class="section"><u>Kids Series</u></h3>
     <p>
       Kids concerts are hour long concerts geared towards children under 7.  
       We offer 3 Kids concerts.  The Kids concerts take place on Sundays at 2:00 pm.  
     </p>
-    <h3>Salem Series Concerts</h3>
+    <h3 class="section"><u>Salem Series Concerts</u></h3>
     <p>
       Salem Series concerts are 6 select Classical Concerts performed by the Oregon Symphony Orchestra in Salem, OR.  
       We offer 6 Salem Series Concerts.  Salem concerts take place on Fridays at 7:30 pm at Smith Auditorium at Willamette University.
     </p>
+    <hr>
     </div>
     <div id="flex">
     <h2>Flex Package</h2>
-    <h3>Choose Your Own (CYO)</h3>
+    <h3 class="section"><u>Choose Your Own (CYO)</u></h3>
     <p>
       The Choose Your Own (CYO) Package is a flexible package made of a minimum of 3 eligible concerts.  
       Currently, the only eligible CYO concerts are all 18 Classical and the 4 Pops concerts.  
-      CYO subscribers can add Kids, Popcorn, or Special concerts on to their package at full price.  
+      CYO subscribers can add Kids, Popcorn, or Special concerts to their package at full price.  
     </p>
     <h2>Special Concerts</h2>
     <p>
@@ -169,83 +194,60 @@ body {
       Special concerts can happen any day of the week but are generally on weeknights at 7:30 pm.  
       You receive no benefits for purchasing Special concerts. 
     </p>
-    <h3>Premium Special Concerts</h3>
+    <h3 class="section"><u>Premium Special Concerts</u></h3>
     <p>
       Each season we have a small number of Premium Special concerts that we do not discount even for our Subscribers.  
       This season Itzhak Perlman and the Pink Martini Valentine concerts are the Premium Special concerts.  
       Premium Special concerts can happen any day of the week.  
     </p>
+    <hr>
     </div>
     <div id="exchanges">
-    <h1>Exchanges & Donations</h1>
+    <h1 class="section">Exchanges & Donations</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="cancellations">
-    <h1>Canceled Performances</h1>
+    <h1 class="section">Canceled Performances</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="discounts">
-    <h1>Discounts, Special Offers & Group Tickets</h1>
+    <h1 class="section">Discounts, Special Offers & Group Tickets</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="accessible-seating">
-    <h1>ADA Accessible Seating How-To</h1>
+    <h1 class="section">ADA Accessible Seating How-To</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="children">
-    <h1>Children Attending Concerts</h1>
+    <h1 class="section">Children Attending Concerts</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="concert-hall">
-    <h1>At the Concert Hall</h1>
+    <h1 class="section">At the Concert Hall</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="will-call">
-    <h1>Will Call: A How-To Guide</h1>
+    <h1 class="section">Will Call: A How-To Guide</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
     <div id="timeline">
-    <h1>Timeline of Important Events</h1>
+    <h1 class="section">Timeline of Important Events</h1>
     <p>
-        One of the primary benefits of being a subscriber to the Oregon Symphony 
-        is the ability to exchange tickets between fixed Series concerts at no additional cost.
-        Subscribers are welcome to make as many exchanges as they need throughout the season, 
-        with a number of exceptions, which are detailed below.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
     </p>
     </div>
 </div>
