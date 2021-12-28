@@ -9,6 +9,7 @@ body {
 }
 
 /* Fixed sidenav, full height */
+
 .sidenav {
   height: 100%;
   width: 200px;
@@ -68,9 +69,20 @@ body {
   padding-right: 8px;
 }
 
+.background {
+  background-color: #FAF9F6;
+}
+
 .section {
   text-align: center;
   padding-bottom: 50px;
+}
+
+.dotted-line {
+  border:none;
+  border-top:1px dashed;
+  height:1px;
+  width:50%;
 }
 
 .landing-logo {
@@ -80,7 +92,6 @@ body {
   padding-bottom: 125px;
   width: 50%;
 }
-
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -88,168 +99,520 @@ body {
 }
 </style>
 </head>
-<body>
+<body class="background">
 
 <div class="sidenav">
   <button class="dropdown-btn">Subscriptions
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-    <a href="#overview">Overview</a>
+    <a href="#sub-overview">Overview</a>
     <a href="#fixed">Fixed Series</a>
     <a href="#flex">Flex & Specials</a>
   </div>
-  <a href="#exchanges">Exchanges & Donations</a>
-  <a href="#cancellations">Canceled Performances</a>
-  <a href="#discounts">Discounts, Special Offers & Group Tickets</a>
-  <a href="#accessible-seating">ADA Accessible Seating How-To</a>
-  <a href="#children">Children Attending Concerts</a>
-  <a href="#concert-hall">Concert Hall Guide</a>
-  <a href="#will-call">Will Call Guide</a>
-  <a href="#timeline">Events Timeline</a>
+  <button class="dropdown-btn">Exchanges & Donations
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#sub-exchange">SUB Exchange Overview</a>
+    <a href="#stb-exchange">STB Exchange Overview</a>
+    <a href="#voucher">Exchange Voucher</a>
+    <a href="#donation">Ticket Donation</a>
+  </div>
+  <button class="dropdown-btn">Discounts, Special Offers & Group Tickets
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#discount-overview">Overview</a>
+    <a href="#sub-discount">SUB Discount</a>
+    <a href="#a4a-discount">Arts for All</a>
+    <a href="#student">Student</a>
+    <a href="#military">Military</a>
+    <a href="#senior">Senior Rush</a>
+    <a href="#pyp-mys">PYP/MYS</a>
+    <a href="#chinook">Chinook Book</a>
+    <a href="#arts-card">The Arts Card/Arts Impact Fund</a>
+    <a href="#comp-ticket">Complimentary Tickets</a>
+    <a href="#staff-discount">Staff Discount</a>
+    <a href="#former-musician">Former Musician Discount</a>
+    <a href="#choir-discount">Choir Discount</a>
+    <a href="#gospel-choir-discount">Gospel Choir Discount</a>
+    <a href="#other-offers">Speical Offers</a>
+    <a href="#group-tickets">Group Tickets</a>
+  </div>
+  <button class="dropdown-btn">Concert Guide
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#concert-overview">Overview</a>
+    <a href="#will-call">Will Call Guide</a>
+    <a href="#cancellations">Cancellations</a>
+    <a href="#children">Children</a>
+    <a href="#hall-discounts">At Hall Discounts</a>
+  </div>
+  <a href="#ada">ADA How-To</a>
+  <a href="#resources">Resources</a>
 </div>
 
 <div class="main">
+  <div class="chapter">
   <img class="landing-logo" src="https://www.orsymphony.org/globalassets/media/logo_OS_v_RGB.png">
   <h1 class="section">Ticket Office Handbook</h1>
   <hr>
-    <div id="overview">
-    <h1 class="section">Subscriptions</h1>
-    <h2>Overview</h2>
-    <p>
-      The Oregon Symphony offers a variety of subscription ticket packages.
-      There are two types: <b>Fixed Series</b> package and a <b>Flex Series</b> package.
-      The <b>Fixed Series</b> packages are a specific set of pre-selected concerts.
-      The <b>Flex Series</b> can be mostly customized by the subscriber.
-    </p>
-    <p> 
-      The benefits of being a <b>Fixed Series</b> subscriber are:
-      <ol>
-        <li>Lowest Prices for Best Seats</li> 
-        <li>Subscriber Discounts on Add-On Concerts</li> 
-        <li>Free Exchanges</li>
-        <li>No Handling Fees on Add-On Concerts</li>
-        <li>Invites to Special Subscriber Only Events</li>
-        <li>The Same Seat Each Season</li>
-        <li>Early Access to Special Concerts</li>
-        <li>Rehearsal Passes</li>
-        <li>Payment Plan Options</li>
-      </ol>
-    </p>
-    <p>
-      The benefits of being a <b>Flex Series</b> subscriber are:
+  <div id="sub-overview">
+  <h1 class="section">Subscriptions</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    The Oregon Symphony offers a variety of subscription ticket packages. There are two types: <b>Fixed Series</b> package and a <b>Flex Series</b> package. The <b>Fixed Series</b> packages are a specific set of pre-selected concerts. The <b>Flex Series</b> can be mostly customized by the subscriber.
+  </p>
+  <p> 
+    The benefits of being a <b>Fixed Series</b> subscriber are:
     <ol>
+      <li>Lowest Prices for Best Seats</li> 
       <li>Subscriber Discounts on Add-On Concerts</li> 
       <li>Free Exchanges</li>
       <li>No Handling Fees on Add-On Concerts</li>
       <li>Invites to Special Subscriber Only Events</li>
-      <li>Ability to Create a Custom Package of Their Choosing</li>
+      <li>The Same Seat Each Season</li>
+      <li>Early Access to Special Concerts</li>
+      <li>Rehearsal Passes</li>
+      <li>Payment Plan Options</li>
     </ol>
-    <hr>
-    </p>
-    </div>
-    <div id="fixed">
-    <h2 >Fixed Series</h2>
-    <h3 class="section"><u>Classical Series</u></h3>
-    <p>
-      Classical concerts are concerts where classical music is the focus.
-      We offer 18 different Classical concerts. They can be purchased in sets of 6, 12, or all 18.
-      The Classical concerts take place on Saturdays at 7:30 pm, Sundays at 2:00 pm, and Mondays at 7:30 pm.
-    </p>
-    <h3 class="section"><u>Pops Series</u></h3>
-    <p>
-      Pops concerts are concerts where popular music is the focus.
-      We offer 4 different Pops concerts. The Pops concerts take place on Saturdays at 7:30 pm and Sunday at 2:00 pm.
-    </p>
-    <h3 class="section"><u>Popcorn Series</u></h3>
-    <p>
-      Popcorn concerts are movies that we screen while the Orchestra plays the score live.  
-      We offer 4 Popcorn Package concerts. The Popcorn concerts take place on Saturdays at 7:30 pm and Sundays at 2:00pm. 
-      Sometimes, due to popularity, there may be an added show on Friday Night or another weekend day. 
-    </p>
-    <h3 class="section"><u>Kids Series</u></h3>
-    <p>
-      Kids concerts are hour long concerts geared towards children under 7.  
-      We offer 3 Kids concerts.  The Kids concerts take place on Sundays at 2:00 pm.  
-    </p>
-    <h3 class="section"><u>Salem Series Concerts</u></h3>
-    <p>
-      Salem Series concerts are 6 select Classical Concerts performed by the Oregon Symphony Orchestra in Salem, OR.  
-      We offer 6 Salem Series Concerts.  Salem concerts take place on Fridays at 7:30 pm at Smith Auditorium at Willamette University.
-    </p>
-    <hr>
-    </div>
-    <div id="flex">
-    <h2>Flex Package</h2>
-    <h3 class="section"><u>Choose Your Own (CYO)</u></h3>
-    <p>
-      The Choose Your Own (CYO) Package is a flexible package made of a minimum of 3 eligible concerts.  
-      Currently, the only eligible CYO concerts are all 18 Classical and the 4 Pops concerts.  
-      CYO subscribers can add Kids, Popcorn, or Special concerts to their package at full price.  
-    </p>
-    <h2>Special Concerts</h2>
-    <p>
-      We offer a variety of one-night-only Special concerts.  
-      They can range from famous classical musicians, Broadway singers, or popular music acts.  
-      Special concerts can happen any day of the week but are generally on weeknights at 7:30 pm.  
-      You receive no benefits for purchasing Special concerts. 
-    </p>
-    <h3 class="section"><u>Premium Special Concerts</u></h3>
-    <p>
-      Each season we have a small number of Premium Special concerts that we do not discount even for our Subscribers.  
-      This season Itzhak Perlman and the Pink Martini Valentine concerts are the Premium Special concerts.  
-      Premium Special concerts can happen any day of the week.  
-    </p>
-    <hr>
-    </div>
-    <div id="exchanges">
-    <h1 class="section">Exchanges & Donations</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="cancellations">
-    <h1 class="section">Canceled Performances</h1>
-    <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="discounts">
-    <h1 class="section">Discounts, Special Offers & Group Tickets</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="accessible-seating">
-    <h1 class="section">ADA Accessible Seating How-To</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="children">
-    <h1 class="section">Children Attending Concerts</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="concert-hall">
-    <h1 class="section">At the Concert Hall</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="will-call">
-    <h1 class="section">Will Call: A How-To Guide</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
-    <div id="timeline">
-    <h1 class="section">Timeline of Important Events</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus. Arcu risus quis varius quam quisque id. Gravida quis blandit turpis cursus in. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Dolor magna eget est lorem ipsum dolor. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Turpis in eu mi bibendum neque. Euismod lacinia at quis risus sed vulputate odio ut enim. Nunc sed velit dignissim sodales ut eu sem. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
-    </p>
-    </div>
+  </p>
+  <p>
+    The benefits of being a <b>Flex Series</b> subscriber are:
+  <ol>
+    <li>Subscriber Discounts on Add-On Concerts</li> 
+    <li>Free Exchanges</li>
+    <li>No Handling Fees on Add-On Concerts</li>
+    <li>Invites to Special Subscriber Only Events</li>
+    <li>Ability to Create a Custom Package of Their Choosing</li>
+  </ol>
+  <hr class="dotted-line">
+  </p>
+  </div>
+  <div id="fixed">
+  <h2 class="section">Fixed Series</h2>
+  <h3><u>Classical Series</u></h3>
+  <p>
+    Classical concerts are concerts where classical music is the focus. We offer 18 different Classical concerts. They can be purchased in sets of 6, 12, or all 18. The Classical concerts take place on Saturdays at 7:30 pm, Sundays at 2:00 pm, and Mondays at 7:30 pm.
+  </p>
+  <h3><u>Pops Series</u></h3>
+  <p>
+    Pops concerts are concerts where popular music is the focus. We offer 4 different Pops concerts. The Pops concerts take place on Saturdays at 7:30 pm and Sunday at 2:00 pm.
+  </p>
+  <h3><u>Popcorn Series</u></h3>
+  <p>
+    Popcorn concerts are movies that we screen while the Orchestra plays the score live. We offer 4 Popcorn Package concerts. The Popcorn concerts take place on Saturdays at 7:30 pm and Sundays at 2:00pm. Sometimes, due to popularity, there may be an added show on Friday Night or another weekend day. 
+  </p>
+  <h3><u>Kids Series</u></h3>
+  <p>
+    Kids concerts are hour long concerts geared towards children under 7. We offer 3 Kids concerts. The Kids concerts take place on Sundays at 2:00 pm.  
+  </p>
+  <h3><u>Salem Series Concerts</u></h3>
+  <p>
+    Salem Series concerts are 6 select Classical Concerts performed by the Oregon Symphony Orchestra in Salem, OR. We offer 6 Salem Series Concerts. Salem concerts take place on Fridays at 7:30 pm at Smith Auditorium at Willamette University.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="flex">
+  <h2 class="section">Flex Package</h2>
+  <h3><u>Choose Your Own (CYO)</u></h3>
+  <p>
+    The Choose Your Own (CYO) Package is a flexible package made of a minimum of 3 eligible concerts. Currently, the only eligible CYO concerts are all 18 Classical and the 4 Pops concerts. CYO subscribers can add Kids, Popcorn, or Special concerts to their package at full price.  
+  </p>
+  <h2 class="section">Special Concerts</h2>
+  <p>
+    We offer a variety of one-night-only Special concerts. They can range from famous classical musicians, Broadway singers, or popular music acts. Special concerts can happen any day of the week but are generally on weeknights at 7:30 pm. You receive no benefits for purchasing Special concerts. 
+  </p>
+  <h3><u>Premium Special Concerts</u></h3>
+  <p>
+    Each season we have a small number of Premium Special concerts that we do not discount even for our Subscribers. This season Itzhak Perlman and the Pink Martini Valentine concerts are the Premium Special concerts. Premium Special concerts can happen any day of the week.  
+  </p>
+  <hr>
+  </div>
+  <div id="sub-exchange">
+  <h1 class="section">Exchanges & Donations</h1>
+  <ul>
+  <h3><li>Ticket-for-Ticket Exchanges</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Exchange Deadline</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Refunds</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Price Types</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Price Differences</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Writing a Balance Off to Exchanges</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Price Details</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Classical & Pops Series</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Popcorn Package</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Kids Series</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Choose Your Own Subscribers</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Salem Series Concerts</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Special Concerts</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </ul>
+  <hr class="dotted-line">
+  </div>
+  <div id="stb-exchange">
+  <h2 class="section">Single Ticket Buyers (STB) Exchange Overview</h2>
+  <ul>
+  <h3><li>Ticket-for-Ticket Exchanges</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Exchange Deadline</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Different Series Concert</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Exchange Fees</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Price Differences</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><li>Special Concerts</li></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="voucher">
+  <h2 class="section">Exchange Vouchers</h2>
+  <h3><u>Series Subscriber Exchange Voucher</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div>
+  <h3><u>Single Ticket Buyer Exchange Voucher</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="donation">
+  <h2 class="section">Ticket Donation</h2>
+  <p>
+    All Oregon Symphony patrons have the option of donating tickets they cannot use back to the Symphony as a tax-deductible donation.
+  </p>
+  <p>
+    If the patron is donating tickets back before the week of the concert, return the concert and put the negative to the Donations payment method. Please make a note in the notes line like this. “[date] Ticket Donation $X [initials],” So it would look like 6/25/2021 Ticket Donation $200 EJ, This is so Development knows where the revenue is coming from.
+  </p>
+  <p>
+    If it is the week of a concert, we must always donate in a new order (NOT in the original subscription or single ticket order). To do so, open a new order on a patron's account under “Ticket” Mode of Sale. Create a line item with the date of the concert they are donating, and find their seats on the seat map.
+  </p>
+  <p>
+    Their seats should show up as orange in the map. Right click on each seat and choose “Donate for Resale” from the drop down menu. It will provide a prompt asking if you really want to donate the seat back. Click “OK” to donate the seat back.
+  </p>
+  <p>
+    To print a donation receipt, click “Print Order” at the bottom of the order screen. The donation receipt is located in the “Header” drop down menu of the print window. Change the header to “Donated Tickets Form” from the drop down, and print the receipt. The receipt will print on ticket stock, and you'll need to write the date of the performance that is being donated back. Print a normal header and mail the receipt like a regular ticket order.
+  </p>
+  <hr>
+  </div>
+  <div id="discount-overview">
+  <h1 class="section">Discounts, Special Offers & Group Tickets</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    The Oregon Symphony offers several discounts on tickets throughout the season. All discounts are always subject to availability. Not every concert is available at a discount, as some of our concerts sell out or get very close to selling out. The decision about what discounts will be offered is made Monday, the week of a concert, although sometimes later. Patrons who are inquiring about discounts to a performance in the future are encouraged to check back with us the week of a concert.
+  </p>
+  <p>
+    Ticket discounts are never valid on seats in the Dress Circle. The Marketing department also runs a number of promotions throughout the season, both for subscriptions and single tickets.
+  </p>
+  <p>
+    Specific details about these discounts and promotions are provided in the “Promotions” document and the “Web Promotions” document. These documents are located on the G: Drive/Departments/Ticketing/CURRENT OFFERS. All PSR's must keep a shortcut to both documents on the desktop of their computer for easy access. They are very helpful, detailed, and are updated regularly to include any new information and to get rid of any old or expired offers/discounts. The “Promotions” document details all of the discounts that are typically offered through the Ticket Office. The “Web Promotions” document primarily details offers and promotions that are available through our website. Many of the offers in the “Web Promotions” document are ones that patrons receive via email from the Symphony.  
+  </p>
+  </div>
+  <div id="sub-discount">
+  <h3><u>Subscriber Discount</u></h3>
+  <p>
+    If a subscriber would like to purchase any additional tickets on top of their subscription, we can offer them a 10% discount.  This applies to special Concerts as well.  The only exception would be if we have a Premium Concert where we offer no discounts. 
+  </p>
+  <p>
+    To reserve a Subscriber discount ticket you would use the Disc 10% price type with “Subscriber Discount” as the Price Type Reason. 
+  </p>
+  </div>
+  <div id="a4a-discount">
+  <u><h3>Arts for All</h3></u>
+  <p>
+    As part of the Arts for All program, the Oregon Symphony offers $5 tickets to select performances to Oregon Trail Card holders. The number of tickets offered with the Arts for All discount can vary depending on the popularity of a concert, but it is most often 2 tickets, and occasionally up to 4.
+  </p>
+  <p>
+    In order to take advantage of the discount, Oregon Trail Card holders must present a valid card in person or over the phone. The Arts for All discount is not available through our website. They must do so once per season. For patrons ordering over the phone, they must read the full number of their Oregon Trail Card, which is to be recorded in the “Notes” field of the order screen. The process is the same for when they present their card in person.  
+  </p>
+  <p>
+    In order to set someone up for the Arts for All discount, they must have an account in Tessitura. In the “Attributes” tab of their account, click on the “Constituencies” option. Click “Add” in the bottom left corner of the screen, and a drop down menu will appear. Select the “Art for All (ART)” option from the drop down menu. You will also need to assign a date range. The beginning date should be the day you are creating the account or setting up the attribute, and the end date should always be June 30th of whatever year the current season will end in (for example, this season would be 6/30/2020). Our fiscal year ends June 30th, so after this time, the attribute will expire, and they will need to present a valid Oregon Trail Card again at the beginning of the next season. Once they have been set up in Tessitura with the “ART” constituency, they do not need to present their card again for the rest of the season.
+  </p>
+  <p>
+    When selling tickets with the Arts for All discount, the price type is “$5 Special”, and the price type reason is “Art for All”. Depending upon the concert and seating availability, the area open for the Arts for All discount varies but is usually Stage or Front Center Right. Other open seating areas are determined by the Director of Patron Services or the Ticket Office Manager.  
+  </p>
+  </div>
+  <div id="student">
+  <h3><u>Student Tickets</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="military">
+  <h3><u>Military Discount</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="senior">
+  <h3><u>Senior Rush</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique. 
+  </p>
+  </div>
+  <div id="pyp-mys">
+  <h3><u>PYP/MYS</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="chinook">
+  <u><h3>Chinook Book</h3></u>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="arts-card">
+  <u><h3>The Arts Card/Arts Impact Fund</h3></u>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="comp-ticket">
+  <h2 class="section">Staff, Musician, and Choir Discounts and Comp Tickets</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="former-musician">
+  <u><h3>Former Musician Complimentary Subscriptions</h3></u>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="choir-discount">
+  <u><h3>Choir Discount</h3></u>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="gospel-choir-discount">
+  <u><h3>Gospel Choir Discount</h3></u>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <div id="other-offers">
+  <h3><u>Other Discounts/Special Offers/Promotions</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <hr class="dotted-line">
+  </div>
+  <div id="group-tickets">
+  <h2 class="section">Group Tickets</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <hr>
+  </div>
+  <div id="concert-overview">
+  <h1 class="section">Concert Guide</h1>
+  <h2 class="section">At The Concert Hall</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Concert Shift Schedule</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>When To Arrive</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Dress Code</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Setting Up</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Cash Bank Procedure</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Selling Tickets at the Concert Hall</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Other Subscriber Services at the Hall</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Reprinting a Ticket</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Processing a Cash Payment</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>At the Hall Discouts</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <h3><u>Tearing Down</u></h3>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="will-call">
+  <h2 class="section">Will Call: A How-To Guide</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="cancellations">
+  <h2 class="section">Canceled Performances</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="children">
+  <h2 class="section">Children Attending Concerts</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr class="dotted-line">
+  <div id="hall-discounts">
+  <h2 class="section">At the Hall Discounts</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  </div>
+  <hr>
+  <div id="accessible-seating">
+  <h1 class="section">ADA Accessible Seating How-To</h1>
+  <h3><u>Overview</u></h3>
+  <p>
+    In compliance with the Americans with Disabilities Act (ADA), the Oregon Symphony offers accessible seating for all of our performances at the Arlene Schnitzer Concert Hall. The process for selling and setting up ADA accessible seating for a single concert is detailed below.
+  </p>
+  <h3><u>Companion/Caregivers</u></h3>
+  <p>
+    Part of the ADA requires that the Symphony provide a complimentary ticket for the companion or caregiver of a patron who requires accessible seating, if one is requested. If a patron is purchasing an ADA accessible seat and asks about a seat for their companion/caregiver, a 2nd ticket may be added as a COMP (comp reason “Caregiver”). Please see a manager if you have any questions.
+  </p>
+  <hr class="dotted-line">
+  <h2 id="ada" class="section">ADA Seating Locations</h2>
+  <p>
+    The Arlene Schnitzer Concert Hall has ADA accessible seating on both levels of the hall. In the Orchestra level, they are located in sections A and D. There are a total of 12 ADA accessible seats located in the Rear Orchestra (6 on the left side in Orchestra Section A, and 6 on the right side in Orchestra Section D). On the seat map in Tessitura, these seats are marked with the letter “W” (for “wheelchair”). They are located in the very last row of the Orchestra Side A and D sections (Row HH). These seats are free-standing arm chairs that are different from the regular concert seats throughout the rest of the hall. These seats are ideal for those with mobility issues who need easy access to an exit, or who cannot travel far inside the concert hall. We also offer armless chairs for larger patrons who request “Ample Seating”. The process for setting this up is similar to how we set up ADA “Seat Pulls”. Please see a manager for details. Patrons are not required to be in a wheelchair to use these seats.
+  <p>
+    There are more ADA accessible seats in the Front Orchestra in Sections A and D. The ADA accessible seats in these sections are on the very end of the row (aisle 1 in Section A and aisle 5 in Section D). They begin in Row C and alternate every other row until Row N. The rows in the Front Orchestra Sections A and D that have a wheelchair accessible seat on the end are C, E, G, J, L, and N. The outside aisle seat in these rows is a standard concert seat that can be unbolted and removed in order to create a space for a wheelchair. These seats are ideal for patrons who need to stay in their wheelchair throughout the duration of a concert. On the seat map in Tessitura, they will show up as dark blue with a white dot in the middle. The dark blue color implies that there is a “hold” on them, as we typically reserve these seats for those with ADA needs.
+  </p>
+  <p>
+    There are also a limited number of ADA accessible seats in the Balcony level of the concert hall. They are located in the Dress Circle behind Sections A and E. There is a pair of seats in each location. Similar to the ones in the Rear Orchestra, they are free-standing arm chairs, and they are marked with a “W” on the seat map in Tessitura. For those inquiring, there is an elevator at the concert hall that will take patrons up to the Dress Circle. 
+  </p>
+  <h3><u>ADA Seat Pulls, Seat Kills, and Reminders</u></h3>
+  <p>
+    When selling a single ticket to a patron who requires wheelchair accessible seating in the Front Orchestra Side A and D sections (the seats with the dark blue “holds”), there is a step-by-step process that must be followed in order to ensure that the proper accommodations are made before the patron arrives at the concert hall.   
+  </p>
+  <ul>
+  <h3><li>Reserve the ADA Seat</li></h3>
+  <p>
+    When clicking on one of the seats with a dark blue “hold”, a box will pop up in Tessitura that reads: “That seat is held with the Wheelchair Hold code. Would you like to block it anyway”? Click “Yes” in order to select the seat as part of an order. If the patron will in fact be staying in their wheelchair during the concert, you must arrange for a “Seat Kill” as well as a “Seat Pull Reminder”. 
+  </p>
+  <h3><li>Seat Kill</li></h3>
+  <p>
+    When a patron will be staying in their wheelchair in one of the Front Orchestra ADA locations with a removable seat, it creates a limited amount of space for the seat directly behind that patron. We call this the “Kill Seat”. It will be blocked off with no legroom and we do not sell it.
+  </p>
+  <p>
+    When selling a ticket for an ADA accessible seat that needs to be removed, you must also add the seat directly behind it as a comp (comp reason “ADA Kill”). For example, if a patron who uses a wheelchair buys a pair of tickets in Orchestra Section A, Row J, Seats 1 and 2, the “Kill Seat” is Orchestra Section A, Row K, Seat 1. When the “Kill Seat” is added as a comp, it can be printed and torn up. We do not mail it to the patron or put it at Will Call, as it will not actually be used.
+  </p>
+  <h3><li>Seat Pull/Reminder</li></h3>
+  <p>
+    When selling a ticket in an ADA section to a patron who will be staying in their wheelchair, you must create a “Reminder” in Tessitura to ensure that a “Seat Pull” is taken care of before the concert. To complete a “Reminder”, pull up the patron's constituent record (CTRL+G) and go to the “Connections” tab. Click on “Reminders”. Click “Add” in the bottom left corner and a new line item will appear. The very first item on the left side of the line item will be a drop down menu of different names under “Assigned To”. Make sure to change the name to “ejohnsto” (Emily). Emily is the Ticket Office Manager, and she sends all the “Reminders” to the staff at the Portland5 to be fulfilled before a concert. In the next box, “Task Type”, select “Action” from the drop down menu. The “Priority” box can be left alone (it should read “Medium”). The next box, “Status”, can also be left alone. It should read “Not Complete”, but will change once it has been sent to Portland5 for fulfillment. In the box that says “Warn Days”, enter the number 5. This indicates that we forward the request 5 days in advance of the concert. The “Complete By” date should be the date of the concert you are creating the seat pull reminder for. **If you are creating a reminder for a seat pull less than 5 days before a concert, please let a manager know** The “Completed” and “Cyclical” boxes can be left empty. In the “Notes” field of the “Reminder”, write a short description of the seat that needs to be pulled, and for which concert. For example, if you sold a wheelchair accessible seat to a patron for “Star Wars” on Friday, September 13th in Orchestra Section A, Row J, Seat 1, the “Notes” should look something like this: “ADA Pull 9/13 7:30pm Please pull Orch A, Row J, Seat 1”.  Please see a manager with any questions about how to set up a seat pull “Reminder”. NOTE:  In the event of an exchange out of ADA seats which require a seat pull, remember to cancel the “Reminder” so that the seat does not mistakenly get pulled.
+  </p>
+  </ul>
+  <hr>
+  <hr>
+  </div>
+  <div id="resources">
+  <h1 class="section">Resources</h1>
+  <h2 class="section">Timeline of Important Events</h2>
+  <p>
+    Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Vitae justo eget magna fermentum iaculis eu non diam. Lorem donec massa sapien faucibus et molestie ac feugiat. Odio aenean sed adipiscing diam donec adipiscing tristique.
+  </p>
+  <hr class="dotted-line">
+  <ul>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/oregon-symphony-21-22-season-brochure.pdf">21-22 Portland Season Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/salem-21-22-season-brochure.pdf">21-22 Salem Season Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/2122/oregon-symphony-choose-your-own-2021-22-brochure.pdf">21-22 Choose Your Own (CYO) Brochure</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/media/seat-maps/seatmap_classical.pdf">Arlene Schnitzer Seat Map</a>
+    </li>
+    <li>
+      <a href="https://www.orsymphony.org/globalassets/wysiwyg/salem/slm-044_jpg_oswebsite_salemseatmap_1224x1584.jpg">Smith Auditorium Seat Map</a>
+    </li>
+  </ul>
+  </div>
+</div>
 </div>
 
 <script>
